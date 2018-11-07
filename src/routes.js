@@ -1,6 +1,5 @@
 import Home from "./components/Home.vue";
 import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
 import CreateEvent from "./components/CreateEvent.vue";
 import VoteEvent from "./components/VoteEvent.vue";
 import RegisterUser from "./components/RegisterUser.vue";
@@ -15,7 +14,6 @@ export const routes = [
 {path:'/', redirect: '/Home'},
 {path: "/Home", component: Home ,name:"homeLink"},
 {path: "/Header", component: Header ,name:"headerLink"},
-{path: "/Footer", component: Footer, name:"footerLink"},
 {path: "/CreateEvent", component: CreateEvent, name:"createEventLink", meta: {requiresAuth:true}},
 {path: "/VoteEvent", component: VoteEvent, name:"voteEventLink", meta: {requiresAuth:true}},
 {path: "/RegisterUser", component: RegisterUser, name:"registerUserLink"},
